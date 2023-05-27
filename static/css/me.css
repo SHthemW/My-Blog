@@ -1,7 +1,16 @@
 
+.m-padded-mini {
+    padding: 0.2em !important;
+}
+
 .m-padded-tb-mini {
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
+}
+
+.m-padded-tb-medium {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
 }
 
 .m-padded-tb-massive {
@@ -30,4 +39,16 @@
 
 .m-opacity-60 {
     opacity: 0.6 !important;
+}
+
+
+/* Display */
+
+.m-inline-block {
+    display: inline-block !important;
+}
+
+.m-container {
+    max-width: 72em !important;
+    margin: auto !important;
 }
