@@ -52,3 +52,30 @@
     max-width: 72em !important;
     margin: auto !important;
 }
+
+
+/* Color */
+
+.m-color-black {
+    color: #333 !important;
+}
+
+
+/* Margin */
+
+.m-margin-tb-tiny {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+.m-margin-top-size-lv0 {
+    margin-top: 0.5em !important;
+}
+
+.m-margin-top-size-lv1 {
+    margin-top: 1em !important;
+}
+
+.m-margin-top-size-lv2 {
+    margin-top: 2em !important;
+}
