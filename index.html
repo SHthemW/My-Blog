@@ -11,32 +11,39 @@
 
     <!-- 导航 -->
     <nav class="ui inverted attached segment m-padded-tb-mini">
+
+        <!-- center content -->
         <div class="ui container">
-            <div class="ui inverted secondary menu">
+            <div class="ui inverted secondary stackable menu">
 
                 <!-- top menu -->
                 <h2 class="ui teal header item">SHW's Blog</h2>
-                <a herf="#" class="item"> <i class="home icon"> </i>首页</a>
-                <a herf="#" class="item">分类</a>
-                <a herf="#" class="item">标签</a>
-                <a herf="#" class="item">我</a>
+                <a herf="#" class="m-item item m-mobile-hide"> <i class="home icon"> </i>首页</a>
+                <a herf="#" class="m-item item m-mobile-hide">分类</a>
+                <a herf="#" class="m-item item m-mobile-hide">标签</a>
+                <a herf="#" class="m-item item m-mobile-hide">我</a>
 
                 <!-- search -->
-                <div class="right item">
+                <div class="right item m-mobile-hide">
                     <div class="ui icon input">
                         <input type="text" placeholder="Search...">
                         <i class="search link icon"></i>
                     </div>
                 </div>
-
             </div>
-        </div>     
+        </div>
+
+        <!-- details btn -->
+        <a href="#" class="ui menu toggle inverted icon button m-pos-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>     
     </nav>
 
     <!-- 中间内容 -->
     <div class="m-padded-tb-massive">
         <div class="ui container">
-            <div class="ui grid">
+            <div class="ui stackable grid">
+
                 <!-- center -->          
                 <div class="eleven wide column">
                     
@@ -57,7 +64,7 @@
 
                         <!-- center units -->
                         <div class="ui padded vertical segment m-padded-tb-medium">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="ui eleven wide column">
                                     <h3 class="ui header">这是文章的标题</h3>
                                     <p class="m-text-thin">温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!</p>
@@ -92,7 +99,7 @@
                             </div>
                         </div>
                         <div class="ui padded vertical segment m-padded-tb-medium">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="ui eleven wide column">
                                     <h3 class="ui header">这是文章的标题</h3>
                                     <p class="m-text-thin">温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!</p>
@@ -127,7 +134,7 @@
                             </div>
                         </div>
                         <div class="ui padded vertical segment m-padded-tb-medium">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="ui eleven wide column">
                                     <h3 class="ui header">这是文章的标题</h3>
                                     <p class="m-text-thin">温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!</p>
@@ -162,7 +169,7 @@
                             </div>
                         </div>
                         <div class="ui padded vertical segment m-padded-tb-medium">
-                            <div class="ui grid">
+                            <div class="ui mobile reversed stackable grid">
                                 <div class="ui eleven wide column">
                                     <h3 class="ui header">这是文章的标题</h3>
                                     <p class="m-text-thin">温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!温迪真的很可爱啊!</p>
@@ -211,6 +218,7 @@
                     </div>
 
                 </div>
+
                 <!-- right -->
                 <div class="five wide column">
                     
@@ -326,7 +334,7 @@
     <!-- 底部footer -->
     <footer class="ui inverted vertical segment m-padded-tb-massive">
         <div class="ui center aligned container">
-            <div class="ui inverted divided grid">
+            <div class="ui inverted divided stackable grid">
 
                 <div class="three wide column">
                     <div class="ui inverted link list">
@@ -367,5 +375,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script> 
+
+
+    <!-- [details btn on top] func -->
+    <script>
+        $('.menu.toggle').click(
+            function()
+            {
+                $('.m-item').toggleClass('m-mobile-hide');
+            });
+    </script>
+
+
 </body>
 </html>
